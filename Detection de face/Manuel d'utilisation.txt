@@ -1,0 +1,39 @@
+
+1.creer un environnement opencv
+
+	conda create opencv-env
+    
+    installer : opencv
+
+2. activer l'environnement
+	
+	activate opencv-env
+
+3.Placer vous dans votre repertoire de travil
+	
+	Pour changer de repertoir on utilise la commande suivante
+  		cd /D chemin
+	exemple :  cd /D C:\Users\22558\Documents\Python Scripts\face-recognition-with-python 
+
+4.lancer le fichier face_detect.py il prend en argument une image
+
+ 	exemple :	python face_detect.py Sidney.jpg
+
+ 	pour quitter appuyer la touche "q"
+
+5.lance le fichier video_face_detect.py pour la detection de face en temps reel avec la camera de son ordinateur
+
+	python video_face_detect.py
+
+	pour quitter appuyer la touche "q"
+
+6. Maintant nous allons connecter un telephone android et utiliser la camera du telephone pour faire la detection de face
+
+	6.1 La condition est que votre telephone android dois être dans le meme réseau que votre ordinateur
+	
+	6.2 telecharger l'application IP Webcam sur play store
+	
+	6.3 lancer l'application et demarrer le serveur 
+	
+	6.4 lancer le fichier cam_face_detect en donnat en argument l'adresse de serveur
+	exemple : python cam_face_detect.py 192.168.43.1:8080
